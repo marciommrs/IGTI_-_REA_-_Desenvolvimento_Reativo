@@ -1,0 +1,53 @@
+<div>
+  <div class="container mt-3">
+    <div class="card mb-3">
+      <div class="card-header">
+        Cálculo da Taxa de Metabolismo Basal
+      </div>
+      <div class="card-body">
+        <form [formGroup]="form">
+          <div class="row row-space">
+            <div class="col-5">
+              <label for="name">Nome</label>
+              <input type="text" formControlName="nome" id="name" class="form-control">
+            </div>
+          </div>
+          <div class="row row-space">
+            <div class="col-2">
+              <label for="name">Peso</label>
+              <input type="text" formControlName="peso" id="peso" class="form-control">
+            </div>
+            <div class="col-2">
+              <label for="altura">Altura</label>
+              <input type="number" formControlName="altura" id="altura" class="form-control">
+            </div>
+            <div class="col-2">
+              <label for="idade">Idade</label>
+              <input type="number" formControlName="idade" id="idade" class="form-control">
+            </div>
+            <div class="form-group" style="padding-left: 20px;">
+              <label for="sexo">Sexo</label>
+              <select formControlName="sexo" id="sexo" class="form-control">
+                  <option value="M" selected>Masculino</option>
+                  <option value="F">Feminino</option>
+              </select>
+          </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class=" container">
+    <div class="card">
+      <div class="card-header">
+        Olá {{ nome.value }}. A seguir sua taxa metabólica basal.
+      </div>
+      <div class="card-body">
+        <p>Taxa de metabolismo basal (TMB): {{ tmb }}</p>
+      </div>
+      <div class="card-footer min-h-50">
+        <span id="spanText">Taxa Metabolica Basa é o total de calorias gastas para manter as funções vitais, como os batimentos cardíacos, a pressão arterial e a temperatura corporal.</span>
+      </div>
+    </div>
+  </div>
+</div>
