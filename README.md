@@ -1,4 +1,4 @@
-# atividade-previa-rea
+# Atividade prévia - REA
 
 MBA IGTI - Desenvolvimento FullStack
 REA - Desenvolvimento Reativo
